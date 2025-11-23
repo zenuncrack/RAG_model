@@ -15,7 +15,7 @@ from langchain_chroma import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.tools.tavily_search import TavilySearchResults
 
-load_dotenv()
+
 
 llm_base = ChatGroq(model="llama-3.3-70b-versatile", temperature=1)
 

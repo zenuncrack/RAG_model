@@ -17,12 +17,12 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 
 
 
-llm_base = ChatGroq(model="llama-3.3-70b-versatile", temperature=1)
+
 
 
 
 def build_rag_agent_from_file(file_path):
-
+    llm_base = ChatGroq(model="llama-3.3-70b-versatile", temperature=1)
     if file_path.endswith(".pdf"):
         loader = PyPDFLoader(file_path)
     else:
